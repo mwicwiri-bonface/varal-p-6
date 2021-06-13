@@ -19,7 +19,7 @@ def mto_required(function=None, redirect_field_name=REDIRECT_FIELD_NAME, login_u
 
 def varal_admin_required(function=None, redirect_field_name=REDIRECT_FIELD_NAME, login_url='varal_admin:login'):
     """
-    Decorator for views that checks that the logged in user is an varal admin,
+    Decorator for views that checks that the logged in user is varal admin,
     redirects to the applicant's log-in page if necessary.
     """
     actual_decorator = user_passes_test(
